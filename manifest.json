@@ -1,0 +1,19 @@
+{
+  "name": "ConvertHTMLTable2Excel",
+  "version": "1.0.0",
+  "description": "HTMLテーブルをExcel形式（タブ区切）でクリップボードにコピーする機能を提供します。",
+  "permissions": ["tabs", "contextMenus"],
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["scripts/contents.js"]
+  }],
+  "icons": {
+    "16": "images/outline_file_copy_white_16pt.png",
+    "48": "images/outline_file_copy_white_48pt.png",
+    "128": "images/outline_file_copy_white_128pt.png"
+  },
+  "manifest_version": 2
+}

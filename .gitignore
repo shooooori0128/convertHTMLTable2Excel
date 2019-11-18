@@ -1,0 +1,4 @@
+# Mac "Finder" files ignore.
+.DS_Store
+# VSCode extension "Local History" files ignore.
+.history
